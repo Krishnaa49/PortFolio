@@ -5,7 +5,7 @@ import moon from "../../assets/moon.svg";
 import twitterIcon from "../../assets/twitter-light.svg";
 import githubIcon from "../../assets/github-light.svg";
 import linkedinIcon from "../../assets/linkedin-light.svg";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Murali-Krishna-2.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
