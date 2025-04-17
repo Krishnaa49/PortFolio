@@ -26,7 +26,7 @@ function Hero() {
       </div>
       <div>
         <h1>Murali Krishna</h1>
-        <h2>BackEnd Developer</h2>
+        <h2>Software Engineer</h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter Icon" />
