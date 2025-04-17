@@ -10,7 +10,6 @@ import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-
   const themeIcon = theme === "Light" ? sun : moon;
 
   return (
@@ -25,23 +24,32 @@ function Hero() {
         />
       </div>
       <div>
-        <h1>Murali Krishna</h1>
-        <h2>Software Engineer</h2>
+        <h1>
+          <span className={styles.highlight}>Murali</span> Krishna
+        </h1>
+        <h2 className={styles.floating}>Software Engineer</h2>
+
+        <div className={styles.contact}>
+          <p>📞 <a href="tel:+91 7075027502">+91 7075027502</a></p>
+          <p>📧 <a href="mk5612330@gmail.com">mk5612330@gmail.com</a></p>
+        </div>
+
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter Icon" />
           </a>
           <a href="https://github.com/" target="_blank">
-            <img src={githubIcon} alt="Twitter Icon" />
+            <img src={githubIcon} alt="GitHub Icon" />
           </a>
           <a href="https://linkedin.com/" target="_blank">
-            <img src={linkedinIcon} alt="Twitter Icon" />
+            <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
         </span>
+
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          With a passion for developing modern React web apps for commercial businesses.
         </p>
+
         <a href={CV} download>
           <button className="hover">Resume</button>
         </a>
